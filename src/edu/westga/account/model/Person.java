@@ -5,7 +5,7 @@ package edu.westga.account.model;
  * Person class that manipulates account.
  * 
  * @author danielburkhart
- *
+ * @version Spring 2016
  */
 public class Person implements Runnable {
 
@@ -54,10 +54,9 @@ public class Person implements Runnable {
 		while (this.keepWorking) {
 
 			this.getRandomValue();
-
 			this.evaluateRandom();
-
 			this.sleepForHalfSecond();
+
 		}
 	}
 
@@ -103,8 +102,8 @@ public class Person implements Runnable {
 
 		try {
 			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+		} catch (InterruptedException exception) {
+			exception.printStackTrace();
 		}
 
 	}

@@ -4,7 +4,7 @@ package edu.westga.account.model;
  * Account class that deposits and withdraws funds.
  * 
  * @author danielburkhart
- *
+ * @version Spring 2016.
  */
 public class Account {
 
@@ -58,6 +58,8 @@ public class Account {
 
 	/**
 	 * Returns a string representation of the balance.
+	 * 
+	 * @return a string containing the current balance of the account.
 	 */
 	public String toString() {
 		return "New Balance is " + this.balance + "\n";

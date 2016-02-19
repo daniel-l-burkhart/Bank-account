@@ -7,7 +7,7 @@ package edu.westga.account.model;
  * Class that implements the semaphore concept.
  * 
  * @author danielburkhart
- *
+ * @version Spring 2016
  */
 public class Semaphore {
 
@@ -41,7 +41,7 @@ public class Semaphore {
 	 * @Precondition: amount must be positive
 	 * @Postcondition: resource count is increased.
 	 */
-	synchronized public void up(int amount) {
+	public synchronized void up(int amount) {
 
 		if (amount < 0) {
 			throw new IllegalArgumentException("Amount must be positive");
@@ -60,7 +60,7 @@ public class Semaphore {
 	 * @Precondition: amount must be positive.
 	 * @Postcondition: resource count is decreased.
 	 */
-	synchronized public void down(int amount) {
+	public synchronized void down(int amount) {
 
 		if (amount < 0) {
 			throw new IllegalArgumentException("Amount must be positive");
@@ -69,8 +69,8 @@ public class Semaphore {
 		while ((this.resourceCount - amount) <= 0) {
 			try {
 				this.wait();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
+			} catch (InterruptedException exception) {
+				exception.printStackTrace();
 			}
 		}
 
