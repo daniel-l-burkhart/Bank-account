@@ -4,7 +4,7 @@ package edu.westga.account.model;
  * 
  * Person class that manipulates account.
  * 
- * @author danielburkhart
+ * @author Daniel Burkhart
  * @version Spring 2016
  */
 public class Person implements Runnable {

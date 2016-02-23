@@ -3,7 +3,7 @@ package edu.westga.account.model;
 /**
  * Account class that deposits and withdraws funds.
  * 
- * @author danielburkhart
+ * @author Daniel Burkhart
  * @version Spring 2016.
  */
 public class Account {

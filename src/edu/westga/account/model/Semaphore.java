@@ -6,7 +6,7 @@ package edu.westga.account.model;
 /**
  * Class that implements the semaphore concept.
  * 
- * @author danielburkhart
+ * @author Daniel Burkhart
  * @version Spring 2016
  */
 public class Semaphore {

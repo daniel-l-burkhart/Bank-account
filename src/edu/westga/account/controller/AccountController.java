@@ -12,7 +12,7 @@ import edu.westga.account.model.Semaphore;
 /**
  * Controller class that implements all the threads and their applications.
  * 
- * @author danielburkhart
+ * @author Daniel Burkhart
  * @version Spring 2016
  */
 public class AccountController {
@@ -88,20 +88,20 @@ public class AccountController {
 
 	}
 
+	private void startThreads() {
+
+		for (Thread currentThread : this.peopleThreads) {
+			currentThread.start();
+		}
+
+	}
+
 	private void sleepForFiveSeconds() {
 
 		try {
 			Thread.sleep(10 * 1000);
 		} catch (InterruptedException exception) {
 			exception.printStackTrace();
-		}
-
-	}
-
-	private void startThreads() {
-
-		for (Thread currentThread : this.peopleThreads) {
-			currentThread.start();
 		}
 
 	}

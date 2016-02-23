@@ -8,7 +8,7 @@ import edu.westga.account.controller.AccountController;
 /**
  * Application class that contains main method.
  * 
- * @author danielburkhart
+ * @author Daniel Burkhart
  * @version Spring 2016
  */
 public class Application {
